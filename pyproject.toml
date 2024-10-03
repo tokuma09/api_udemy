@@ -45,3 +45,16 @@ select = [
 ignore = [
     "E501", # line too long, handled by black
 ]
+
+fixable = ["ALL"]
+unfixable = ["F401"]
+
+[tool.ruff.format]
+docstring-code-format = true
+docstring-code-line-length = 20
+quote-style = "double"
+indent-style = "space"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
