@@ -17,4 +17,5 @@ def index():
 
 @app.post(path="/")
 def calc(data: Data):
-    return {"result": data.x + data.y}
+    z = data
+    return {"result": z}
